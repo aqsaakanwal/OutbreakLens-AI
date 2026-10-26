@@ -1,71 +1,84 @@
-# 🔬 OutbreakLens AI — Foodborne Surveillance Explorer
+# 🔬 OutbreakLens AI
+### Foodborne Surveillance Explorer | Interactive Analytics for Public Health Research
 
-**Explore foodborne outbreak data through interactive visualizations and descriptive analytics.**
+<p align="center">
+  <strong>Turning foodborne outbreak records into accessible, interactive insights.</strong>
+</p>
 
-OutbreakLens AI is a Streamlit-based exploratory data analysis application designed to help users investigate foodborne outbreak records, examine trends, explore reported contributing factors, and understand outbreak-related outcomes through interactive charts and tables.
+<p align="center">
+  An exploratory data analysis platform for investigating foodborne outbreak surveillance data through interactive dashboards, descriptive analytics, and research-oriented data exploration.
+</p>
 
-## ✨ Features
-
-- **Interactive Dashboard:** Explore key statistics and summaries from the dataset.
-- **Outbreak Explorer:** Filter records by available attributes such as year, state, etiology, setting, and food vehicle.
-- **Data Visualizations:** Examine patterns and distributions through interactive charts.
-- **Research Insights:** Explore descriptive findings and potential questions for further investigation.
-- **Ask Research AI:** Use a rule-based question interface to explore supported descriptive questions.
-- **Data Access:** View and download filtered data where supported.
-- **Data Quality Review:** Examine missing values and other dataset characteristics.
-- **Methodology:** Review the scope, limitations, and intended use of the application.
-
-## 🛠️ Technology Stack
-
-- Python
-- Streamlit
-- Pandas
-- NumPy
-- Plotly
-
-## 📊 Dataset
-
-The application is designed to explore foodborne outbreak surveillance records, including variables such as reporting year, location, etiology, setting, food vehicle, illnesses, hospitalizations, and deaths, when available.
-
-The dataset's coverage and completeness may vary. Reported records should not automatically be interpreted as a complete count of all outbreaks or cases.
-
-## 🚀 Run Locally
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/aqsaakanwal/OutbreakLens-AI.git
-   cd OutbreakLens-AI
-   ```
-
-2. Install the required packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Start the application:
-
-   ```bash
-   streamlit run app.py
-   ```
-
-## ⚠️ Scope and Limitations
-
-OutbreakLens AI is an exploratory data analysis and research-support prototype. Its charts and summaries describe the available records; they do not establish causation, estimate population-level incidence, or predict future outbreaks.
-
-The rule-based research interface is not a trained AI model and does not replace epidemiological investigation, laboratory confirmation, or public health guidance.
-
-## 🎯 Project Goal
-
-To make foodborne outbreak surveillance data easier to explore, interpret, and discuss through an accessible interactive interface.
-
-## 👩‍💻 Author
-
-**Aqsa Kanwal**
-
-Food Science & Technology | Data Analytics | AI for Food Safety
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-Interactive%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly">
+</p>
 
 ---
 
-*Developed as an exploratory prototype for foodborne surveillance data analysis.*
+## 📌 Overview
+
+Foodborne illness surveillance data can help researchers explore reported outbreaks, implicated food vehicles, etiological agents, settings, and associated health outcomes. However, working directly with large tabular datasets can make exploratory analysis less accessible to users without programming experience.
+
+**OutbreakLens AI** addresses this usability challenge through an interactive, web-based environment for exploring foodborne outbreak records.
+
+Built with Python and Streamlit, the application combines data filtering, visual exploration, descriptive summaries, and research-oriented question exploration in a unified interface.
+
+Rather than presenting data as static tables alone, OutbreakLens AI helps users investigate patterns, compare available categories, identify data-quality concerns, and formulate questions for further research.
+
+> **Project principle:** Make surveillance data easier to explore while keeping interpretation transparent and acknowledging the limitations of reported records.
+
+## 🎯 Objectives
+
+- Make foodborne outbreak data accessible through an intuitive interface.
+- Explore temporal, geographic, etiological, and food-vehicle patterns in available records.
+- Summarize reported illnesses, hospitalizations, and deaths where data are available.
+- Support descriptive research questions without requiring users to write code.
+- Highlight missing information and limitations that matter when interpreting surveillance data.
+- Encourage evidence-aware exploration rather than unsupported causal or predictive claims.
+
+## ✨ Key Features
+
+### 🏠 1. Interactive Overview Dashboard
+
+A centralized starting point for understanding the selected dataset.
+
+- Summary metrics based on available records.
+- High-level views of reported outbreak characteristics.
+- Interactive visualizations for initial exploration.
+- A consistent interface for navigating analytical sections.
+
+### 🔎 2. Outbreak Explorer
+
+Investigate records using available dataset attributes.
+
+- Filter by reporting year and geographic location.
+- Explore etiology and outbreak settings.
+- Examine associated food vehicles and food categories.
+- Review selected records in tabular form.
+- Inspect filtered subsets and download data where supported.
+
+*The filters and results depend on the columns available in the loaded dataset.*
+
+### 📊 3. Interactive Data Visualizations
+
+Use charts to investigate distributions and relationships within the available records.
+
+Potential analytical perspectives include:
+
+- Reported records across years.
+- Geographic distribution of records.
+- Frequently reported etiological agents.
+- Food vehicles and food categories.
+- Outbreak settings.
+- Reported illnesses, hospitalizations, and deaths.
+
+Interactive charts can help users compare categories and identify patterns that merit closer investigation.
+
+### 💬 4. Ask Research AI
+
+A research-question interface for supported descriptive queries.
+
+The interface uses rule-based logic to route
